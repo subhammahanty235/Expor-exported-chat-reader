@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cont1{
   display: flex;
+}
+.minicont1{
+  width: 50%;
+  height: 90vh;
+  
+  /* background-color: aqua; */
+}
+.minicont2{
+  width: 50%;
+  height: 90vh;
+  /* background-color: aquamarine; */
+}
+
+.minicont2{
+  width: 50%;
+  height: 90vh;  
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  
+  justify-content: center; 
+}
+.inputArea{
+  margin-top: 10%;
+  padding: 20px;
+  background-color: rgb(243, 247, 246);
+  border: 3px solid rgb(6, 93, 253);
+  display: flex;
+  border-radius: 20px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
+.inputArea input{
+  margin: 0px 10%;
+  border-radius: 10px;
+  background-color: rgb(55, 109, 245);
+  color: #fff;
+}
+.authorBox{
+  text-align: center;
+  border: 1px solid Black;
+  border-radius: 6px;
+  display:flex ;
+  flex-direction: column;
+}
+/* HomePage ends */
 
-.App-link {
-  color: #61dafb;
-}
+/* css for chats */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,0 +1,113 @@
+ .chats{
+    min-height: 100vh;
+    background-color:#d7d2cc;
+  }
+  .bgimg{
+    background-image: url('../images/background.jpg');
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.2;
+    background-size: 370px;
+  }
+  .maindiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+  }
+  .maindiv header{
+    background-color: #075e54;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position:fixed;
+  }
+  .maindiv header p{
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: 1px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  
+    font-weight: 400;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+  }
+    .maindiv section{
+      height: auto;
+      width: 100%;
+      /* margin-top: calc(100% - 65px); */
+      margin-top: 65px;
+      overflow: scroll;
+      /* position: relative; */
+    }
+    .maindiv section div{
+      width: 100%;
+    }
+    .maindiv section .othermsg{
+      background-color: rgb(197, 220, 247);
+      height: auto;
+      border-radius: 10px;
+      width: 80%;
+      /* margin-left: 10%; */
+      margin: 10px 10%;
+      font-size: 0.6em;
+      padding: 7px 10px;
+      text-align: center;
+  }
+  
+    .maindiv section .message{
+      max-width: 100%;
+    /* background-color: yellow; */
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    }
+    .maindiv section .reciever .message{
+      justify-content: flex-start;
+    }
+    .maindiv section .message p{
+      padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 0.85em;
+    letter-spacing: 0.3px;
+    max-width: 75%;
+    word-wrap: break-word;
+    }
+    .maindiv section .message span{
+      font-size: 0.6em;
+    margin: 0 5px;
+    background-color: #ffffff;
+    /* backdrop-filter: blur(15px); */
+    padding: 5px 8px;
+    border-radius: 7px;
+    }
+    .maindiv section .reciever .message p{
+      background-color: #fff;
+      margin-left: 15px;
+    }
+    /* .maindiv section .sender{
+      justify-content:flex-end ;
+    } */
+    .maindiv section .sender .message{
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+    }
+     
+    .maindiv section .sender .message p{
+      background-color: #dcf8c6;
+      margin-right: 15px;
+    }
+    .messagetxt{
+      transition: 0.1s linear transform;
+    }
+    .messagetxt:active{
+      transform: scale(0.97);
+    }
+  
