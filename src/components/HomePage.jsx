@@ -90,7 +90,7 @@ const HomePage  = ()=>{
                 </div>
                 <div className="minicont2" >
                     <div className="inputArea">
-                        <p className="text-center">Choose a Exported File</p>
+                        <p className="text-center ">Choose a Exported File</p>
                         <hr />
                         <input type="file" onChange={(e)=>{loadfile(e)}} />
                         <button className={`btn btn-outline-success mx-3 my-3 ${submited===false ? 'd-none':''}`} onClick={showAuthors}>Click to Render</button>

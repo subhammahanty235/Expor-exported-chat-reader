@@ -1,53 +1,98 @@
+#navbar {
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 17px #929292,
+    -5px -5px 17px #ffffff;
+}
 
-
-.cont1{
+.cont1 {
   display: flex;
 }
-.minicont1{
+
+.minicont1 {
   width: 50%;
   height: 90vh;
   
   /* background-color: aqua; */
 }
-.minicont2{
+
+.minicont2 {
   width: 50%;
   height: 90vh;
+
   /* background-color: aquamarine; */
 }
 
-.minicont2{
+.minicont2 {
   width: 50%;
-  height: 90vh;  
+  height: 90vh;
   display: flex;
   /* flex-direction: column; */
   /* align-items: center; */
-  
-  justify-content: center; 
+
+  justify-content: center;
 }
-.inputArea{
+
+.inputArea {
   margin-top: 10%;
   padding: 20px;
   background-color: rgb(243, 247, 246);
-  border: 3px solid rgb(6, 93, 253);
+  /* border: 3px solid rgb(6, 93, 253); */
   display: flex;
   border-radius: 20px;
   flex-direction: column;
-  
+
+  border-radius: 50px;
+  background: linear-gradient(145deg, #dcd8d8, #f0f0f0);
+  box-shadow: 8px 8px 16px #808080,
+    -8px -8px 16px #ffffff;
 }
-.inputArea input{
+
+.inputArea input {
   margin: 0px 10%;
   border-radius: 10px;
   background-color: rgb(55, 109, 245);
   color: #fff;
 }
-.authorBox{
+
+.inputArea p {
+  /* From https://css.glass */
+  font-weight: 500;
+  background: rgba(240, 126, 126, 0.03);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(152, 60, 60, 0.1);
+  backdrop-filter: blur(3.1px);
+  -webkit-backdrop-filter: blur(3.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.authorBox {
   text-align: center;
   border: 1px solid Black;
   border-radius: 6px;
-  display:flex ;
+  display: flex;
   flex-direction: column;
 }
+
 /* HomePage ends */
 
 /* css for chats */
 
+/* media queries */
+@media only screen and (max-width: 600px) {
+  .cont1 {
+    display: block;
+  }
+
+  #navbar {
+    border-radius: 1px;
+  }
+
+  .minicont1 {
+    display: none;
+  }
+
+  .minicont2 {
+    width: 100vw;
+  }
+}
