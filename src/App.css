@@ -41,13 +41,15 @@
   display: flex;
   border-radius: 20px;
   flex-direction: column;
-
+  transition: all 0.4s;
   border-radius: 50px;
   background: linear-gradient(145deg, #dcd8d8, #f0f0f0);
   box-shadow: 8px 8px 16px #808080,
     -8px -8px 16px #ffffff;
 }
-
+.inputArea:active , .inputArea:hover{
+  transform: translateY(-3%);
+}
 .inputArea input {
   margin: 0px 10%;
   border-radius: 10px;
@@ -83,9 +85,10 @@
   .cont1 {
     display: block;
   }
-
+  
   #navbar {
     border-radius: 1px;
+    width: 100%;
   }
 
   .minicont1 {
@@ -94,5 +97,15 @@
 
   .minicont2 {
     width: 100vw;
+    transition: none;
+    /* backdrop-filter: blur(3.1px); */
+    background: transparent;
+    /* position: absolute; */
+
+
+  }.inputArea{
+    width: 90vw;
+
+    background: #fff;
   }
 }

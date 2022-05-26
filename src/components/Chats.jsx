@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './chats.css'
+import user from '../images/userimg.png'
 import { useLocation } from "react-router-dom";
 const Chats = () => {
     // getting the states 
@@ -8,7 +9,7 @@ const Chats = () => {
     const authorsArr = [];
     
     // decoding the array to get all required values
-    // 03/08/21, 1:40 pm - Payel Computer Science: Bol
+   
     const decode = (l)=>{
         const firstPortion = l.indexOf(' - ');
         const secondPortion = l.indexOf(': ');
@@ -56,9 +57,17 @@ const Chats = () => {
 
         </div>
       
-        <div className="maindiv">
-            <header>
-                <p>{reciever}</p>
+        <div className="maindiv ">
+            <header className="d-flex justify-content-between">
+                <div className="recieverdtls d-flex">
+                    <img src={user} alt="dp" style={{width:"50px"}} />
+                    <p className="text-center mx-3 my-2">{reciever}</p>
+                </div>
+                <div className="more d-flex">
+                    <p className="mx-2 my-2">📞</p>
+                    <p className="mx-2 my-2">📽️</p>
+                    <p className="mx-2 my-2">❗</p>
+                </div>
             </header>
             
             
